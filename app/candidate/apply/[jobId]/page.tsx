@@ -19,6 +19,17 @@ async function submitApplication(formData: FormData) {
   const resumeLink = formData.get("resumeLink")
   const coverLetter = formData.get("coverLetter")
 
+  // Ensure all values are strings
+  if (
+    typeof jobId !== "string" ||
+    typeof name !== "string" ||
+    typeof email !== "string" ||
+    typeof resumeLink !== "string" ||
+    typeof coverLetter !== "string"
+  ) {
+    throw new Error("Invalid form data")
+  }
+
   await sql`
     INSERT INTO applications (job_id, name, email, resume_link, cover_letter)
     VALUES (${jobId}, ${name}, ${email}, ${resumeLink}, ${coverLetter})
