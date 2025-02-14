@@ -7,7 +7,6 @@ A full-stack job board application built with Next.js 15, featuring App Router, 
 - **Candidate Flow**
   - Browse job listings
   - View detailed job information
-  - Apply for jobs with a simple form
 
 - **Company Flow**
   - Post new job listings
@@ -48,7 +47,7 @@ npm install or yarn install
   Create a `.env.local` file in the root directory and add the following:
 
 ```bash
-DATABASE_URL=your_neon_db_connection_string
+POSTGRES_URL=your_neon_db_connection_string
 ```
 Replace `your_neon_db_connection_string` with your actual Neon DB connection string.
 
