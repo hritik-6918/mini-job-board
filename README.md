@@ -1,3 +1,5 @@
+![screencapture-mini-job-board-seven-vercel-app-2025-02-14-12_19_16 (1)](https://github.com/user-attachments/assets/db8892fe-8345-4a96-874f-0aa3dafc4cde)
+
 # Mini Job Board
 
 A full-stack job board application built with Next.js 15, featuring App Router, Server Actions, and Neon DB (PostgreSQL).
@@ -7,6 +9,7 @@ A full-stack job board application built with Next.js 15, featuring App Router, 
 - **Candidate Flow**
   - Browse job listings
   - View detailed job information
+  - Apply for jobs with a simple form
 
 - **Company Flow**
   - Post new job listings
