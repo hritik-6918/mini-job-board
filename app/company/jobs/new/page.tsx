@@ -15,6 +15,18 @@ async function createJob(formData: FormData) {
   const location = formData.get("location")
   const salaryRange = formData.get("salaryRange")
 
+  // Ensure all values are strings
+  if (
+    typeof title !== "string" ||
+    typeof company !== "string" ||
+    typeof description !== "string" ||
+    typeof category !== "string" ||
+    typeof location !== "string" ||
+    typeof salaryRange !== "string"
+  ) {
+    throw new Error("Invalid form data")
+  }
+
   await sql`
     INSERT INTO jobs (title, company, description, category, location, salary_range)
     VALUES (${title}, ${company}, ${description}, ${category}, ${location}, ${salaryRange})
@@ -70,4 +82,3 @@ export default function NewJob() {
     </div>
   )
 }
-
