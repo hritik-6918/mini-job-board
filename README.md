@@ -1,4 +1,9 @@
+# Screenshots
 ![screencapture-mini-job-board-seven-vercel-app-2025-02-14-12_19_16 (1)](https://github.com/user-attachments/assets/db8892fe-8345-4a96-874f-0aa3dafc4cde)
+
+![screencapture-mini-job-board-seven-vercel-app-candidate-jobs-2025-02-14-18_03_43](https://github.com/user-attachments/assets/99c78af0-1f3b-470e-a887-95c185f5048d)
+
+![screencapture-mini-job-board-seven-vercel-app-company-jobs-2025-02-14-17_57_21](https://github.com/user-attachments/assets/c0e8a220-1e5f-4e45-9f3f-80d34205b878)
 
 # Mini Job Board
 
