@@ -2,7 +2,7 @@ import { sql } from "@vercel/postgres"
 import { cache } from "react"
 
 // Create cached database query function
-export const queryDb = cache(async (query: string, values: any[] = []) => {
+export const queryDb = cache(async (query: string, values: (string | number | boolean | null)[] = []) => {
   try {
     // Use sql template literal from @vercel/postgres
     const result = await sql.query(query, values)
@@ -12,4 +12,3 @@ export const queryDb = cache(async (query: string, values: any[] = []) => {
     throw new Error("Failed to fetch data")
   }
 })
-
