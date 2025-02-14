@@ -71,7 +71,7 @@ This project can be easily deployed on Vercel. Follow these steps:
 1. Push your code to a GitHub repository.
 2. Sign up for a Vercel account if you haven't already.
 3. Create a new project on Vercel and link it to your GitHub repository.
-4. In the Vercel project settings, add the `DATABASE_URL` environment variable with your Neon DB connection string.
+4. In the Vercel project settings, add the `POSTGRES_URL` environment variable with your Neon DB connection string.
 5. Deploy the project
 
 ## Built With
